@@ -93,6 +93,7 @@ def postback(event):
     data = event.postback.data
     user_id = event.source.user_id
     # current_app.logger.info(f'user_id:{user_id} text:{data}')
+    print(f'user_id:{user_id} text:{data}')
 
     data_dic = ast.literal_eval(data)
     operation_status = operation()
@@ -387,5 +388,5 @@ def postback(event):
     data = {'replyToken': event.reply_token, 'messages': reply_json}
     # current_app.logger.info(str(reply_json))
     res = requests.post(reply_url, data=json.dumps(data), headers=headers)
-    # print(res.text)  # for error check
+    print(res.text)  # for error check
     # s.close()

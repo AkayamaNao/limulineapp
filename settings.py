@@ -29,7 +29,7 @@ else:
     db_uri = proc.stdout.read().decode('utf-8').strip()
 
 # makottyann
-operationtime = [[datetime.time(12, 0), 'none'],
+operationtime = [[datetime.time(12, 0), 'pm'],
                  [datetime.time(20, 00), 'pm']]
 
 # # department

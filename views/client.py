@@ -93,7 +93,7 @@ def postback(event):
     data = event.postback.data
     user_id = event.source.user_id
     # current_app.logger.info(f'user_id:{user_id} text:{data}')
-    print(f'user_id:{user_id} text:{data}')
+    # print(f'user_id:{user_id} text:{data}')
 
     data_dic = ast.literal_eval(data)
     operation_status = operation()
@@ -204,11 +204,12 @@ def postback(event):
         menu_dict = []
         for date, group in grouped:
             menu_dict.append({'date': date, 'meals': group.meal_name.to_list()})
-
+        print(menu_dict)
         if len(menu_dict) == 0:
             reply_json.append(createjson.text("メニューがありません"))
         else:
             reply_json.append(createjson.menu_info(menu_dict))
+        print(reply_json)
 
 
     elif data_dic['action'] == 'order':

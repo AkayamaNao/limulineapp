@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="main" class="table-responsive">
+        <table class="ordertable table table-bordered">
+            <caption>{{ date }}</caption>
+            <tbody>
+            {% for row1 in orders %}
+                <tr>
+                    <td style="width: 10%; font-weight: 900; padding: 4px" rowspan="{{ row1['span'] }}">{{ row1['meal_name'] }}({{ row1['num'] }})</td>
+                    {% for row2 in row1['each_size'] %}
+                        <td rowspan="{{ row2['span'] }}" style="border-right-width: 3px; width: 5%; font-weight: 900; padding: 4px">{{ row2['size'] }}({{ row2['num'] }})</td>
+                        {% for row3 in row2['member'] %}
+                            {% for name in row3 %}
+                                <td style="padding: 4px">{{ name }}</td>
+                            {% endfor %}
+                            </tr>
+                            <tr>
+                        {% endfor %}
+                    {% endfor %}
+                    </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

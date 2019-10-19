@@ -947,3 +947,16 @@ TypeError: 'datetime.datetime' object is not callable
 2019-10-19 18:44:03,808     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:44:03] "POST /callback HTTP/1.1" 200 -
 2019-10-19 18:44:04,876     INFO client.py:L66: Request body: {"events":[{"type":"postback","replyToken":"8257e5ec3cea45dabb127abb77f30e4d","source":{"userId":"U30e943d25893d71598bc39a02fad7751","type":"user"},"timestamp":1571478243770,"postback":{"data":"{'action':'rich_menu'}"}}],"destination":"U125c85bfd1942d38f6a0fa331e34c9ee"}
 2019-10-19 18:44:06,529     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:44:06] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:49:58,915     INFO _internal.py:L122:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-10-19 18:50:03,747     INFO client.py:L82: user_id:U30e943d25893d71598bc39a02fad7751 text:メニュー
+2019-10-19 18:50:03,747     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:50:03] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:50:09,612     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:50:09] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:50:11,580     INFO client.py:L82: user_id:U30e943d25893d71598bc39a02fad7751 text:注文確認
+2019-10-19 18:50:11,581     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:50:11] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:50:11,980     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:50:11] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:52:13,186     INFO client.py:L82: user_id:U30e943d25893d71598bc39a02fad7751 text:注文
+2019-10-19 18:52:13,187     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:52:13] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:52:16,713     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:52:16] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:52:19,380     INFO client.py:L82: user_id:U30e943d25893d71598bc39a02fad7751 text:注文確認
+2019-10-19 18:52:19,381     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:52:19] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:52:19,758     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:52:19] "POST /callback HTTP/1.1" 200 -

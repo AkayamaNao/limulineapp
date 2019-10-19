@@ -921,3 +921,29 @@ TypeError: 'datetime.datetime' object is not callable
 2019-10-19 18:14:59,768     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:14:59] "POST /addmenu HTTP/1.1" 200 -
 2019-10-19 18:15:02,768     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:15:02] "POST /update_calendar HTTP/1.1" 200 -
 2019-10-19 18:15:04,238     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:15:04] "GET /get_meals HTTP/1.1" 200 -
+2019-10-19 18:42:31,080     INFO _internal.py:L122:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-10-19 18:43:29,309     INFO client.py:L66: Request body: {"events":[{"type":"postback","replyToken":"8b0d8867ca474a9caa3ed2617e095992","source":{"userId":"U30e943d25893d71598bc39a02fad7751","type":"user"},"timestamp":1571478208663,"postback":{"data":"{'action':'rich_menu'}"}}],"destination":"U125c85bfd1942d38f6a0fa331e34c9ee"}
+2019-10-19 18:43:30,363     INFO client.py:L66: Request body: {"events":[{"type":"message","replyToken":"2a5632c8b3ab4d1fa5c108a748e57625","source":{"userId":"U30e943d25893d71598bc39a02fad7751","type":"user"},"timestamp":1571478208662,"message":{"type":"text","id":"10768173381913","text":"メニュー"}}],"destination":"U125c85bfd1942d38f6a0fa331e34c9ee"}
+2019-10-19 18:43:30,363     INFO client.py:L81: user_id:U30e943d25893d71598bc39a02fad7751 text:メニュー
+2019-10-19 18:43:30,364     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:43:30] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:43:34,356     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:43:34] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:43:37,288     INFO client.py:L66: Request body: {"events":[{"type":"postback","replyToken":"f9ef452d6aed4227a897f2bfde55edf1","source":{"userId":"U30e943d25893d71598bc39a02fad7751","type":"user"},"timestamp":1571478216842,"postback":{"data":"{'action':'rich_order'}"}}],"destination":"U125c85bfd1942d38f6a0fa331e34c9ee"}
+2019-10-19 18:43:38,583     INFO client.py:L66: Request body: {"events":[{"type":"message","replyToken":"27c4c8a07a90404d97e84f04b62ad1e9","source":{"userId":"U30e943d25893d71598bc39a02fad7751","type":"user"},"timestamp":1571478216840,"message":{"type":"text","id":"10768174016449","text":"注文"}}],"destination":"U125c85bfd1942d38f6a0fa331e34c9ee"}
+2019-10-19 18:43:38,583     INFO client.py:L81: user_id:U30e943d25893d71598bc39a02fad7751 text:注文
+2019-10-19 18:43:38,584     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:43:38] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:43:41,953     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:43:41] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:43:57,647     INFO client.py:L66: Request body: {"events":[{"type":"postback","replyToken":"fd38dd36f4ca42c886837077f934deee","source":{"userId":"U30e943d25893d71598bc39a02fad7751","type":"user"},"timestamp":1571478237205,"postback":{"data":"{'action':'rich_cancel'}"}}],"destination":"U125c85bfd1942d38f6a0fa331e34c9ee"}
+2019-10-19 18:43:58,882     INFO client.py:L66: Request body: {"events":[{"type":"message","replyToken":"4daf9f4519074f3683396aa4051f0808","source":{"userId":"U30e943d25893d71598bc39a02fad7751","type":"user"},"timestamp":1571478237204,"message":{"type":"text","id":"10768175614263","text":"キャンセル"}}],"destination":"U125c85bfd1942d38f6a0fa331e34c9ee"}
+2019-10-19 18:43:58,882     INFO client.py:L81: user_id:U30e943d25893d71598bc39a02fad7751 text:キャンセル
+2019-10-19 18:43:58,883     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:43:58] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:43:59,306     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:43:59] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:44:00,748     INFO client.py:L66: Request body: {"events":[{"type":"postback","replyToken":"9a831286608347f08c83a3dd09263190","source":{"userId":"U30e943d25893d71598bc39a02fad7751","type":"user"},"timestamp":1571478240704,"postback":{"data":"{'action':'rich_check'}"}}],"destination":"U125c85bfd1942d38f6a0fa331e34c9ee"}
+2019-10-19 18:44:02,220     INFO client.py:L66: Request body: {"events":[{"type":"message","replyToken":"4968fb02645a49c0b1b6f1ce84160484","source":{"userId":"U30e943d25893d71598bc39a02fad7751","type":"user"},"timestamp":1571478240703,"message":{"type":"text","id":"10768175889007","text":"注文確認"}}],"destination":"U125c85bfd1942d38f6a0fa331e34c9ee"}
+2019-10-19 18:44:02,220     INFO client.py:L81: user_id:U30e943d25893d71598bc39a02fad7751 text:注文確認
+2019-10-19 18:44:02,221     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:44:02] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:44:02,393     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:44:02] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:44:03,807     INFO client.py:L66: Request body: {"events":[{"type":"message","replyToken":"8eea9b65bd954c05a8ac302a029b24d7","source":{"userId":"U30e943d25893d71598bc39a02fad7751","type":"user"},"timestamp":1571478243769,"message":{"type":"text","id":"10768176133292","text":"メニュー"}}],"destination":"U125c85bfd1942d38f6a0fa331e34c9ee"}
+2019-10-19 18:44:03,807     INFO client.py:L81: user_id:U30e943d25893d71598bc39a02fad7751 text:メニュー
+2019-10-19 18:44:03,808     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:44:03] "POST /callback HTTP/1.1" 200 -
+2019-10-19 18:44:04,876     INFO client.py:L66: Request body: {"events":[{"type":"postback","replyToken":"8257e5ec3cea45dabb127abb77f30e4d","source":{"userId":"U30e943d25893d71598bc39a02fad7751","type":"user"},"timestamp":1571478243770,"postback":{"data":"{'action':'rich_menu'}"}}],"destination":"U125c85bfd1942d38f6a0fa331e34c9ee"}
+2019-10-19 18:44:06,529     INFO _internal.py:L122: 127.0.0.1 - - [19/Oct/2019 18:44:06] "POST /callback HTTP/1.1" 200 -

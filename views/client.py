@@ -80,7 +80,7 @@ def message_text(event):
     text = event.message.text
     current_app.logger.info(f'user_id:{user_id} text:{text}')
 
-    line_bot_api.reply_message(event.reply_token, TextSendMessage(text=text))
+    # line_bot_api.reply_message(event.reply_token, TextSendMessage(text=text))
 
 
 @handler.add(PostbackEvent)
